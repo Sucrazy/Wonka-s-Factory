@@ -8,12 +8,14 @@ public class PathFollower : MonoBehaviour {
     public float speed;
 	public float reachDist;
 	public int currentPoint;
+    public PathFollower pathList;
 
 
 	// Use this for initialization
 	void Start () {
-
-	}
+        pathList = GameObject.FindGameObjectWithTag("Machine").GetComponent<PathFollower>();
+        path = pathList.path;
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -21,15 +23,16 @@ public class PathFollower : MonoBehaviour {
 		{
 			float dist = Vector3.Distance (path [currentPoint].position, transform.position);
 
-			transform.position = Vector3.MoveTowards (transform.position, path [currentPoint].position, speed);
+            Vector3 moveTo = path[currentPoint].position;
+            moveTo.y += .625f;
+
+            if (dist <= 1.5)
+			    transform.position = Vector3.MoveTowards (transform.position, moveTo, speed);
 
 			if (dist == reachDist) {
 				currentPoint++;
 			}
 
-			if (currentPoint >= path.Count) {
-				currentPoint = 0;
-			}
 		}
 
 	}

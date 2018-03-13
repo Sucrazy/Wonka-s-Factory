@@ -4,6 +4,7 @@ public class CubePlacer : MonoBehaviour
 {
     private GridSystem grid;
     PathFollower pathList;
+    public GameObject prefab;
 
     void Start()
     {
@@ -32,10 +33,28 @@ public class CubePlacer : MonoBehaviour
     private void PlaceCubeNear(Vector3 clickPoint)
     {
         var finalPosition = grid.GetNearestPointOnGrid(clickPoint);
-        GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        obj.transform.position = finalPosition;
+        finalPosition.y = 0.5f;
+        if (Physics.CheckSphere(finalPosition, 0.1f) != true)
+        {
+            var lastObjectPos = pathList.path[pathList.path.Count - 2].position;
+            if (Vector3.Distance(lastObjectPos, finalPosition) <= 1.1f)
+            {
+                GameObject obj;
+                if (lastObjectPos.z != finalPosition.z)
+                {
+                    obj = GameObject.Instantiate(prefab, finalPosition, Quaternion.Euler(0,0,0));
+                }
+                else
+                {
+                    obj = GameObject.Instantiate(prefab, finalPosition, Quaternion.Euler(0,90,0));
+                }
+                obj.transform.name = "ConveyerBelt";
+                obj.transform.position = finalPosition;
+                obj.transform.parent = GameObject.Find("Path").transform;
+                pathList.path.Insert(pathList.path.Count - 1, (obj.transform));
+            }
+        }
 
-        pathList.path.Add(obj.transform);
         //GameObject.CreatePrimitive(PrimitiveType.Sphere).transform.position = nearPoint;
     }
 }
