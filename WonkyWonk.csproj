@@ -285,6 +285,7 @@
     <Compile Include="Assets\Scripts\ColliderDestroyer.cs" />
     <Compile Include="Assets\Scripts\CubePlacer.cs" />
     <Compile Include="Assets\Scripts\GridSystem.cs" />
+    <Compile Include="Assets\Scripts\Path.cs" />
     <Compile Include="Assets\Scripts\PathFollower.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
   </ItemGroup>

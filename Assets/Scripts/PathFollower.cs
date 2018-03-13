@@ -4,46 +4,30 @@ using UnityEngine;
 
 public class PathFollower : MonoBehaviour {
 
-	public List<Transform> path = new List<Transform>();
     public float speed;
 	public float reachDist;
 	public int currentPoint;
-    public PathFollower pathList;
+    public Path pathList;
 
 
 	// Use this for initialization
 	void Start () {
-        pathList = GameObject.FindGameObjectWithTag("Machine").GetComponent<PathFollower>();
-        path = pathList.path;
+        pathList = GameObject.FindGameObjectWithTag("Pather").GetComponent<Path>(); //finds path
     }
 
 	// Update is called once per frame
 	void Update () {
-		//while (path[currentPoint] != null) 
 		{
-			float dist = Vector3.Distance (path [currentPoint].position, transform.position);
+			float dist = Vector3.Distance (pathList.path[currentPoint].position, transform.position);
 
-            Vector3 moveTo = path[currentPoint].position;
+            Vector3 moveTo = pathList.path[currentPoint].position;
             moveTo.y += .625f;
 
-            if (dist <= 1.5)
+            if (dist <= 1.5) //distance between two machines isn't too large
 			    transform.position = Vector3.MoveTowards (transform.position, moveTo, speed);
 
-			if (dist == reachDist) {
+			if (dist == reachDist) //start moving to next machine
 				currentPoint++;
-			}
-
 		}
-
-	}
-
-	void Draw()
-	{
-		if (path.Count > 0) 
-			for (int i = 0; i < path.Count; i++) {
-				if (path [i] != null) {
-					Gizmos.DrawSphere (path [i].position, reachDist);
-				}
-			}	
 	}
 }

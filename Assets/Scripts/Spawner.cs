@@ -6,8 +6,8 @@ public class Spawner : MonoBehaviour {
 
     public GameObject prefab;
     public bool stopSpawning = false;
-    public float spawnTime;
-    public float spawnDelay;
+    public float spawnTime; //time between spawns
+    public float spawnDelay; //time for first spawn
 
 	// Use this for initialization
 	void Start () {
