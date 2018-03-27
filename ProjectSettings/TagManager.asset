@@ -7,6 +7,12 @@ TagManager:
   - Machine
   - Conveyer
   - Exit
+  - Pather
+  - Path
+  - PathCorner
+  - Zapper
+  - Strawberry
+  - Cockroach
   layers:
   - Default
   - TransparentFX
