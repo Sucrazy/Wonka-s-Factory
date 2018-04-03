@@ -22,12 +22,13 @@ GameObject:
   - component: {fileID: 33443637339911176}
   - component: {fileID: 23307944483946734}
   - component: {fileID: 95061764058948410}
+  - component: {fileID: 114349917733262254}
   - component: {fileID: 65767631741829288}
   - component: {fileID: 114170297948964790}
   - component: {fileID: 114341461372458374}
   m_Layer: 0
   m_Name: cherry
-  m_TagString: Untagged
+  m_TagString: Candy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e805dbad209962c4caf12a8a39c16701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &114349917733262254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802979521991202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cc7dae6deac1c4dbf65af033c8dfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 2

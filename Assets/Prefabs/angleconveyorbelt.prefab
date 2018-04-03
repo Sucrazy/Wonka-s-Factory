@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33703095255725026}
   - component: {fileID: 23176873332012528}
   - component: {fileID: 95439791764401372}
+  - component: {fileID: 65463883339001688}
   m_Layer: 0
   m_Name: angleconveyorbelt
   m_TagString: PathCorner
@@ -85,6 +86,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1192585894442890}
   m_Mesh: {fileID: 4300000, guid: c2bc1523b6d9fce41acbab0ecd45d8a5, type: 3}
+--- !u!65 &65463883339001688
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192585894442890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015148398, y: 0.012690678, z: 0.015007274}
+  m_Center: {x: -0.002575368, y: -0.004345339, z: -0.002528796}
 --- !u!95 &95439791764401372
 Animator:
   serializedVersion: 3

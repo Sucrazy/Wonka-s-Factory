@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33589218069002594}
   - component: {fileID: 23979121747635492}
   - component: {fileID: 95067926454057442}
+  - component: {fileID: 114271856645511986}
+  - component: {fileID: 65182882927840088}
   m_Layer: 0
   m_Name: conversionmachine
   m_TagString: Untagged
@@ -85,6 +87,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1164655984664718}
   m_Mesh: {fileID: 4300000, guid: b723319ad0173934b88b5d7b79bffd5f, type: 3}
+--- !u!65 &65182882927840088
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1164655984664718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009988401, y: 0.018551372, z: 0.020039676}
+  m_Center: {x: 0.0000057995785, y: -0.001456134, z: 0.000108869746}
 --- !u!95 &95067926454057442
 Animator:
   serializedVersion: 3
@@ -102,3 +116,16 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114271856645511986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1164655984664718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc813862b2d84d41a2be9750bad3ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 150
+  rotation: 0

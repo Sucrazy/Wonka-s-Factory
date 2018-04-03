@@ -262,12 +262,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4694596961157160}
   - component: {fileID: 95589327561195780}
+  - component: {fileID: 114226770068944494}
   - component: {fileID: 65951495920691062}
   - component: {fileID: 114304027082859940}
   - component: {fileID: 114321173165133564}
   m_Layer: 0
   m_Name: strawberrysmooth
-  m_TagString: Strawberry
+  m_TagString: Candy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -638,6 +639,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114226770068944494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861359184540240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cc7dae6deac1c4dbf65af033c8dfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1
 --- !u!114 &114304027082859940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -649,6 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e805dbad209962c4caf12a8a39c16701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
 --- !u!114 &114321173165133564
 MonoBehaviour:
   m_ObjectHideFlags: 1

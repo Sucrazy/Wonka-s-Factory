@@ -66,6 +66,7 @@ public class PathPlacer : MonoBehaviour
                         else
                             newCorner = GameObject.Instantiate(corner, lastObjectPos, Quaternion.Euler(0, 270, 0));
                         pathList.path.Insert(pathList.path.Count - 1, newCorner.transform);
+                        newCorner.transform.parent = GameObject.Find("Path").transform;
                     }
                     else if (finalPosition.x > cornerCheck.position.x && finalPosition.z < cornerCheck.position.z)
                     {
@@ -79,6 +80,7 @@ public class PathPlacer : MonoBehaviour
                         else
                             newCorner = GameObject.Instantiate(corner, lastObjectPos, Quaternion.Euler(0, 180, 0));
                         pathList.path.Insert(pathList.path.Count - 1, newCorner.transform);
+                        newCorner.transform.parent = GameObject.Find("Path").transform;
                     }
 
                     else if (finalPosition.x < cornerCheck.position.x && finalPosition.z > cornerCheck.position.z)
@@ -93,6 +95,7 @@ public class PathPlacer : MonoBehaviour
                         else
                             newCorner = GameObject.Instantiate(corner, lastObjectPos, Quaternion.Euler(0, 0, 0));
                         pathList.path.Insert(pathList.path.Count - 1, newCorner.transform);
+                        newCorner.transform.parent = GameObject.Find("Path").transform;
                     }
 
                     else if (finalPosition.x < cornerCheck.position.x && finalPosition.z < cornerCheck.position.z)
@@ -107,9 +110,9 @@ public class PathPlacer : MonoBehaviour
                         else
                             newCorner = GameObject.Instantiate(corner, lastObjectPos, Quaternion.Euler(0, 90, 0));
                         pathList.path.Insert(pathList.path.Count - 1, newCorner.transform);
+                        newCorner.transform.parent = GameObject.Find("Path").transform;
                     }
                 }
-                obj.transform.name = "ConveyerBelt"; 
                 obj.transform.parent = GameObject.Find("Path").transform; //places object in hierarchy
                 pathList.path.Insert(pathList.path.Count - 1, (obj.transform)); //adds object to path
             }

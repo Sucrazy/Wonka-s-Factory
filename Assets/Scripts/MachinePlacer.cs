@@ -6,6 +6,8 @@ public class MachinePlacer : MonoBehaviour
     Path pathList;
     public GameObject prefab;
 
+    public UIManager manager;
+
     void Start() //finds path
     {
         pathList = GameObject.FindGameObjectWithTag("Pather").GetComponent<Path>();
@@ -22,10 +24,13 @@ public class MachinePlacer : MonoBehaviour
         {
             RaycastHit hitInfo; //raycast finds click information
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hitInfo))
+            if (manager.canBuy(prefab.GetComponent<MachineInfo>().cost))
             {
-                PlaceMachineNear(hitInfo.point); //place machine near click
+                manager.addtoBalance(-(prefab.GetComponent<MachineInfo>().cost));
+                if (Physics.Raycast(ray, out hitInfo))
+                {
+                    PlaceMachineNear(hitInfo.point); //place machine near click
+                }
             }
         }
     }
@@ -53,8 +58,6 @@ public class MachinePlacer : MonoBehaviour
                 {
                     obj = GameObject.Instantiate(prefab, finalPosition, Quaternion.Euler(0, 90f, 0));
                 }
-
-                obj.transform.name = "ConveyerBelt";
                 obj.transform.parent = GameObject.Find("Path").transform; //places object in hierarchy
                 pathList.path.Insert(pathList.path.Count - 1, (obj.transform)); //adds object to path
             }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
 
     public GameObject prefab;
+    public UIManager manager;
     public bool stopSpawning = false;
     public float spawnTime; //time between spawns
     public float spawnDelay; //time for first spawn
@@ -16,7 +17,11 @@ public class Spawner : MonoBehaviour {
 
     public void SpawnObject()
     {
-        Instantiate(prefab, transform.position, transform.rotation);
+        if (manager.canBuy(prefab.GetComponent<CandyInfo>().cost))
+        {
+            manager.addtoBalance(-(prefab.GetComponent<CandyInfo>().cost));
+            Instantiate(prefab, transform.position, transform.rotation);
+        }
     }
 
     public void changeObject(GameObject newObj)

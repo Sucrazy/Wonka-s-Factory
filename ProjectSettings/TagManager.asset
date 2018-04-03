@@ -13,6 +13,7 @@ TagManager:
   - Zapper
   - Strawberry
   - Cockroach
+  - Candy
   layers:
   - Default
   - TransparentFX
