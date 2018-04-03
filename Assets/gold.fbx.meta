@@ -1,33 +1,16 @@
 fileFormatVersion: 2
-guid: 236f8df2b0e593346a779b8dfaf43908
-timeCreated: 1522168771
+guid: d0e94f685d2db9940a8216fa7e9e1595
+timeCreated: 1522777402
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube1
-    100004: pCube2
-    100006: pCube3
-    100008: pCube4
-    100010: transform1
-    100012: transform2
-    100014: transform3
     400000: //RootNode
-    400002: pCube1
-    400004: pCube2
-    400006: pCube3
-    400008: pCube4
-    400010: transform1
-    400012: transform2
-    400014: transform3
-    2100000: sky
-    2100002: lambert1
-    2100004: walltexture
-    2100006: lambert2
-    2300000: pCube4
-    3300000: pCube4
-    4300000: pCube4
+    2100000: gold
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCube1
     9500000: //RootNode
   externalObjects: {}
   materials:

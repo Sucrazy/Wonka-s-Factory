@@ -30,6 +30,11 @@ public class MachinePlacer : MonoBehaviour
         }
     }
 
+    public void changeMachine(GameObject newObj)
+    {
+        prefab = newObj;
+    }
+
     private void PlaceMachineNear(Vector3 clickPoint)
     {
         var finalPosition = grid.GetNearestPointOnGrid(clickPoint);

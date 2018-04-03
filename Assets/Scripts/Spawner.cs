@@ -14,13 +14,13 @@ public class Spawner : MonoBehaviour {
         InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
 	}
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void SpawnObject()
     {
         Instantiate(prefab, transform.position, transform.rotation);
+    }
+
+    public void changeObject(GameObject newObj)
+    {
+        prefab = newObj;
     }
 }

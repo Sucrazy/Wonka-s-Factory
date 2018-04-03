@@ -1,33 +1,53 @@
 fileFormatVersion: 2
-guid: 236f8df2b0e593346a779b8dfaf43908
-timeCreated: 1522168771
+guid: cdfb7a7f29bb23f418767d55f3e2e76c
+timeCreated: 1522777402
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube1
+    100002: imagePlane1
     100004: pCube2
     100006: pCube3
     100008: pCube4
-    100010: transform1
-    100012: transform2
-    100014: transform3
+    100010: polySurface1
+    100012: polySurface1 1
+    100014: polySurface2
+    100016: polySurface3
+    100018: polySurface4
+    100020: polySurface4 1
+    100022: transform1
+    100024: transform2
+    100026: transform3
+    100028: transform4
+    100030: transform5
+    100032: transform6
+    100034: transform7
+    100036: transform8
     400000: //RootNode
-    400002: pCube1
+    400002: imagePlane1
     400004: pCube2
     400006: pCube3
     400008: pCube4
-    400010: transform1
-    400012: transform2
-    400014: transform3
-    2100000: sky
-    2100002: lambert1
-    2100004: walltexture
-    2100006: lambert2
-    2300000: pCube4
-    3300000: pCube4
-    4300000: pCube4
+    400010: polySurface1
+    400012: polySurface1 1
+    400014: polySurface2
+    400016: polySurface3
+    400018: polySurface4
+    400020: polySurface4 1
+    400022: transform1
+    400024: transform2
+    400026: transform3
+    400028: transform4
+    400030: transform5
+    400032: transform6
+    400034: transform7
+    400036: transform8
+    2100000: blawberrybody
+    2100002: lambert4
+    2300000: polySurface4
+    3300000: polySurface4
+    4300000: polySurface4
     9500000: //RootNode
   externalObjects: {}
   materials:

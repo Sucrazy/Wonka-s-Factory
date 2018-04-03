@@ -31,6 +31,38 @@ ModelImporter:
     100046: transform8
     100048: transform9
     100050: //RootNode
+    100052: polySurface10
+    100054: polySurface11
+    100056: polySurface12
+    100058: polySurface13
+    100060: polySurface13 1
+    100062: polySurface14
+    100064: polySurface15
+    100066: polySurface16
+    100068: polySurface17
+    100070: polySurface17 1
+    100072: polySurface5
+    100074: polySurface6
+    100076: polySurface6 1
+    100078: polySurface7
+    100080: polySurface8
+    100082: polySurface9
+    100084: transform12
+    100086: transform13
+    100088: transform14
+    100090: transform15
+    100092: transform16
+    100094: transform17
+    100096: transform18
+    100098: transform19
+    100100: transform20
+    100102: transform21
+    100104: transform22
+    100106: transform23
+    100108: transform24
+    100110: transform25
+    100112: transform26
+    100114: transform27
     400000: bifrostAero1
     400002: bifrostAero1Mesh
     400004: pCube1
@@ -57,17 +89,53 @@ ModelImporter:
     400046: transform8
     400048: transform9
     400050: //RootNode
+    400052: polySurface10
+    400054: polySurface11
+    400056: polySurface12
+    400058: polySurface13
+    400060: polySurface13 1
+    400062: polySurface14
+    400064: polySurface15
+    400066: polySurface16
+    400068: polySurface17
+    400070: polySurface17 1
+    400072: polySurface5
+    400074: polySurface6
+    400076: polySurface6 1
+    400078: polySurface7
+    400080: polySurface8
+    400082: polySurface9
+    400084: transform12
+    400086: transform13
+    400088: transform14
+    400090: transform15
+    400092: transform16
+    400094: transform17
+    400096: transform18
+    400098: transform19
+    400100: transform20
+    400102: transform21
+    400104: transform22
+    400106: transform23
+    400108: transform24
+    400110: transform25
+    400112: transform26
+    400114: transform27
     2100000: body
     2100002: siderail
     2100004: lambert3
     2100006: lambert1
     2100008: lightning
+    2100010: lambert4
     2300000: bifrostAero1Mesh
     2300002: pCube5
+    2300004: polySurface17
     3300000: bifrostAero1Mesh
     3300002: pCube5
+    3300004: polySurface17
     4300000: bifrostAero1Mesh
     4300002: pCube5
+    4300004: polySurface17
     9500000: //RootNode
   externalObjects: {}
   materials:
