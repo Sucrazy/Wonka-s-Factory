@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class CandyInfo : MonoBehaviour {
     public int cost;
+    public string name;
 }

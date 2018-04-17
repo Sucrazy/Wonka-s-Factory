@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 23307944483946734}
   - component: {fileID: 95061764058948410}
   - component: {fileID: 114349917733262254}
-  - component: {fileID: 65767631741829288}
   - component: {fileID: 114170297948964790}
   - component: {fileID: 114341461372458374}
+  - component: {fileID: 65767631741829288}
   m_Layer: 0
   m_Name: cherry
   m_TagString: Candy
@@ -95,7 +95,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1802979521991202}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01273182, z: 0.019960064}
@@ -129,11 +129,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  reachDist: 0.625
+  reachDist: 0.18
   currentPoint: 0
   pathList: {fileID: 0}
-  strawberry: {fileID: 1861359184540240, guid: 36bf71a174f8a5d4da9bc230ce7ac42f, type: 2}
-  cockroach: {fileID: 1092196011006744, guid: a60dc273085c1ab4da4f56d8bc2b6c00, type: 2}
+  zapperConversion: {fileID: 1666783753515016, guid: ac8eeb44ff65a254d90d05ea8e5acbbc,
+    type: 2}
+  conversionConversion: {fileID: 1802979521991202}
+  tappyConversion: {fileID: 0}
 --- !u!114 &114341461372458374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -157,4 +159,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68cc7dae6deac1c4dbf65af033c8dfd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 2
+  cost: 5
+  name: Cherry

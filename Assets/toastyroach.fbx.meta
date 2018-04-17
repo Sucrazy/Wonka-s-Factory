@@ -23,7 +23,9 @@ ModelImporter:
     400014: transform3
     2100000: lambert2
     2300000: pCube3
+    2300002: //RootNode
     3300000: pCube3
+    3300002: //RootNode
     4300000: pCube3
     9500000: //RootNode
   externalObjects: {}

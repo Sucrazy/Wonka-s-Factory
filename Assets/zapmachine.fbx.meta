@@ -130,9 +130,11 @@ ModelImporter:
     2300000: bifrostAero1Mesh
     2300002: pCube5
     2300004: polySurface17
+    2300006: //RootNode
     3300000: bifrostAero1Mesh
     3300002: pCube5
     3300004: polySurface17
+    3300006: //RootNode
     4300000: bifrostAero1Mesh
     4300002: pCube5
     4300004: polySurface17

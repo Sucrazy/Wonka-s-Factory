@@ -14,6 +14,7 @@ TagManager:
   - Strawberry
   - Cockroach
   - Candy
+  - Conversion
   layers:
   - Default
   - TransparentFX

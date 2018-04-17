@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33455712285042574}
   - component: {fileID: 23236367024003074}
   - component: {fileID: 95254845897063710}
+  - component: {fileID: 114352194006209478}
   - component: {fileID: 65388825144642368}
   m_Layer: 0
   m_Name: conveyorbelt
@@ -116,3 +117,16 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114352194006209478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613639455409610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc813862b2d84d41a2be9750bad3ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 3
+  rotation: 0

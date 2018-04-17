@@ -263,9 +263,9 @@ GameObject:
   - component: {fileID: 4694596961157160}
   - component: {fileID: 95589327561195780}
   - component: {fileID: 114226770068944494}
+  - component: {fileID: 114321173165133564}
   - component: {fileID: 65951495920691062}
   - component: {fileID: 114304027082859940}
-  - component: {fileID: 114321173165133564}
   m_Layer: 0
   m_Name: strawberrysmooth
   m_TagString: Candy
@@ -617,7 +617,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1861359184540240}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01273182, z: 0.019960064}
@@ -650,7 +650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68cc7dae6deac1c4dbf65af033c8dfd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 1
+  cost: 2
+  name: Strawberry
 --- !u!114 &114304027082859940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -675,8 +676,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  reachDist: 0.625
+  reachDist: 0.18
   currentPoint: 0
   pathList: {fileID: 0}
-  strawberry: {fileID: 1861359184540240}
-  cockroach: {fileID: 1092196011006744, guid: a60dc273085c1ab4da4f56d8bc2b6c00, type: 2}
+  zapperConversion: {fileID: 1679886067261178, guid: ce5406a2581a47a45bcca97983f25abc,
+    type: 2}
+  conversionConversion: {fileID: 1857723056009372, guid: 3dde70f0b06943f42bda84e37d4a2397,
+    type: 2}
+  tappyConversion: {fileID: 0}

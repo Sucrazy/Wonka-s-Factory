@@ -35,12 +35,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4421935882114412}
   - component: {fileID: 95999529049736890}
-  - component: {fileID: 65820186707677422}
-  - component: {fileID: 114049894911160986}
+  - component: {fileID: 114552783444361888}
   - component: {fileID: 114931262924845766}
+  - component: {fileID: 114049894911160986}
+  - component: {fileID: 65820186707677422}
   m_Layer: 0
   m_Name: cockroachsmooth
-  m_TagString: Cockroach
+  m_TagString: Candy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,7 +297,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092196011006744}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01273182, z: 0.019960064}
@@ -329,6 +330,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e805dbad209962c4caf12a8a39c16701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!114 &114552783444361888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092196011006744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cc7dae6deac1c4dbf65af033c8dfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1
+  name: Cockroach
 --- !u!114 &114931262924845766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -341,8 +356,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  reachDist: 0.625
+  reachDist: 0.18
   currentPoint: 0
   pathList: {fileID: 0}
-  strawberry: {fileID: 1861359184540240, guid: 36bf71a174f8a5d4da9bc230ce7ac42f, type: 2}
-  cockroach: {fileID: 1092196011006744}
+  zapperConversion: {fileID: 1069021776740716, guid: 38723def2d1214e4a8a78f8b2ff3ae41,
+    type: 2}
+  conversionConversion: {fileID: 1412922953701250, guid: 2ff1d1bb08cdc934ea63b08885a25cca,
+    type: 2}
+  tappyConversion: {fileID: 0}

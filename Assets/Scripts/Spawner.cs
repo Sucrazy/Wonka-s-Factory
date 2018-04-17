@@ -20,7 +20,8 @@ public class Spawner : MonoBehaviour {
         if (manager.canBuy(prefab.GetComponent<CandyInfo>().cost))
         {
             manager.addtoBalance(-(prefab.GetComponent<CandyInfo>().cost));
-            Instantiate(prefab, transform.position, transform.rotation);
+            GameObject obj = Instantiate(prefab, transform.position, transform.rotation);
+            obj.transform.parent = GameObject.Find("Candy").transform; //places object in hierarchy
         }
     }
 

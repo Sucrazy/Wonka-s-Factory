@@ -10,7 +10,7 @@ public class GridSystem : MonoBehaviour
         position -= transform.position;
 
         int xCount = Mathf.RoundToInt(position.x / size);
-        int yCount = Mathf.RoundToInt(f: position.y / size);
+        int yCount = 0;
         int zCount = Mathf.RoundToInt(position.z / size);
 
         Vector3 result = new Vector3(

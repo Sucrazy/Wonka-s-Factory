@@ -46,7 +46,9 @@ ModelImporter:
     2100000: purawberrybody
     2100002: lambert4
     2300000: polySurface4
+    2300002: //RootNode
     3300000: polySurface4
+    3300002: //RootNode
     4300000: polySurface4
     9500000: //RootNode
   externalObjects: {}

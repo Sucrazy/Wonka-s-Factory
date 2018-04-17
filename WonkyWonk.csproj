@@ -282,16 +282,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraPan.cs" />
     <Compile Include="Assets\Scripts\ColliderDestroyer.cs" />
     <Compile Include="Assets\Scripts\GridSystem.cs" />
     <Compile Include="Assets\Scripts\MachinePlacer.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Object Info\CandyInfo.cs" />
     <Compile Include="Assets\Scripts\Object Info\MachineInfo.cs" />
     <Compile Include="Assets\Scripts\Object Info\Path.cs" />
     <Compile Include="Assets\Scripts\PathFollower.cs" />
-    <Compile Include="Assets\Scripts\PathPlacer.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\trash\CubePlacer.cs" />
+    <Compile Include="Assets\Scripts\trash\PathInfo.cs" />
+    <Compile Include="Assets\Scripts\trash\PathPlacer.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -45,7 +45,9 @@ ModelImporter:
     2100010: doorframe
     2100012: doorknob
     2300000: polySurface3
+    2300002: //RootNode
     3300000: polySurface3
+    3300002: //RootNode
     4300000: polySurface3
     9500000: //RootNode
   externalObjects: {}
