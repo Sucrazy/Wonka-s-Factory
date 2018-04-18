@@ -18,20 +18,20 @@ public class UIManager : MonoBehaviour
         currentBalance.text = "$" + balance.ToString();
     }
 
-    public void addtoBalance(int amount)
+    public void AddToBalance(int amount)
     {
         balance += amount;
         currentBalance.text = "$" + balance.ToString();
     }
 
-    public bool canBuy(int amount)
+    public bool CanBuy(int amount)
     {
         if (amount <= balance)
             return true;
         return false;
     }
 
-    public void showHideMachines()
+    public void ShowHideMachines()
     {
         if (machinePanel.activeSelf == false)
         {
@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
             machinePanel.SetActive(false);
     }
 
-    public void showHideCandy()
+    public void ShowHideCandy()
     {
         if (candyPanel.activeSelf == false)
         {

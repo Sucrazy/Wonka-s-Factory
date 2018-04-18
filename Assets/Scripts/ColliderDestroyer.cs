@@ -15,7 +15,7 @@ public class ColliderDestroyer : MonoBehaviour {
 
         if (other.tag == "Candy")
         {
-           manager.addtoBalance(other.gameObject.GetComponent<CandyInfo>().cost);
+           manager.AddToBalance(other.gameObject.GetComponent<CandyInfo>().cost);
         }
     }
 }

@@ -4,15 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Machine
-  - Conveyer
   - Exit
   - Pather
   - Path
-  - PathCorner
   - Zapper
-  - Strawberry
-  - Cockroach
   - Candy
   - Conversion
   layers:

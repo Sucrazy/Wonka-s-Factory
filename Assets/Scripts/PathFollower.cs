@@ -5,10 +5,10 @@ using UnityEngine;
 public class PathFollower : MonoBehaviour
 {
 
-    public float speed;
-    public float reachDist;
-    public int currentPoint;
-    public Path pathList;
+    private float speed = .05f;
+    private float reachDist = .18f;
+    private int currentPoint = 0;
+    private Path pathList;
 
     public GameObject zapperConversion;
     public GameObject conversionConversion;
@@ -24,14 +24,12 @@ public class PathFollower : MonoBehaviour
     void Update()
     {
         {
-            try
+            try //try catch to destroy object if any incorrect indexing occurs (such as when deleting machines)
             {
-
                 GameObject obj = pathList.path[currentPoint].gameObject;
-                float dist = Vector3.Distance(pathList.path[currentPoint].position, transform.position);
-                Debug.Log(dist);
-
                 Vector3 moveTo = pathList.path[currentPoint].position;
+                float dist = Vector3.Distance(moveTo, transform.position);
+                
                 moveTo.y += .18f;
 
                 if (dist <= 1.25) //distance between two machines isn't too large
@@ -39,7 +37,7 @@ public class PathFollower : MonoBehaviour
 
                 if (dist == reachDist) //start moving to next machine
                 {
-                    if (obj.CompareTag("Path") || obj.CompareTag("PathCorner"))
+                    if (obj.CompareTag("Path"))
                         currentPoint++;
 
                     else if (obj.CompareTag("Zapper"))
@@ -57,11 +55,12 @@ public class PathFollower : MonoBehaviour
                         cChange.currentPoint = currentPoint + 1;
                         Destroy(this.gameObject);
                     }
+
                     else
                         currentPoint++;
                 }
-
             }
+
             catch (System.Exception)
             {
                 Destroy(this.gameObject);

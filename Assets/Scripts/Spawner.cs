@@ -1,32 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour {
 
     public GameObject prefab;
-    public UIManager manager;
-    public bool stopSpawning = false;
-    public float spawnTime; //time between spawns
-    public float spawnDelay; //time for first spawn
+    public UIManager manager;    
+    public float spawnTime;
 
-	// Use this for initialization
-	void Start () {
-        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
-	}
+    private bool stopSpawning = false;
 
-    public void SpawnObject()
+    public void ChangeObject(GameObject newObj)
     {
-        if (manager.canBuy(prefab.GetComponent<CandyInfo>().cost))
+        prefab = newObj;
+    }
+
+    public void SpawnTrigger()
+    {
+        if (stopSpawning == false)
         {
-            manager.addtoBalance(-(prefab.GetComponent<CandyInfo>().cost));
-            GameObject obj = Instantiate(prefab, transform.position, transform.rotation);
-            obj.transform.parent = GameObject.Find("Candy").transform; //places object in hierarchy
+            InvokeRepeating("SpawnObject", 0, spawnTime);
+            stopSpawning = true;
+        }
+        else
+        {
+            CancelInvoke();
+            stopSpawning = false;
         }
     }
 
-    public void changeObject(GameObject newObj)
+    private void SpawnObject()
     {
-        prefab = newObj;
+        if (manager.CanBuy(prefab.GetComponent<CandyInfo>().cost))
+        {
+            manager.AddToBalance(-(prefab.GetComponent<CandyInfo>().cost));
+            GameObject obj = Instantiate(prefab, transform.position, transform.rotation);
+            obj.transform.parent = GameObject.Find("Candy").transform; //places object in hierarchy
+        }
     }
 }
