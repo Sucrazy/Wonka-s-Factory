@@ -153,11 +153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51413d30ba34141841115040fa21fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
-  reachDist: 0.18
-  currentPoint: 0
-  pathList: {fileID: 0}
   zapperConversion: {fileID: 1177573675999200, guid: 349fdec127e09324fb4d634bdaf77d10,
     type: 2}
-  conversionConversion: {fileID: 1679886067261178}
-  tappyConversion: {fileID: 0}
+  conversionConversion: {fileID: 1857723056009372, guid: 3dde70f0b06943f42bda84e37d4a2397,
+    type: 2}
+  tappyConversion: {fileID: 1460559340187130, guid: 0da6b95a70f3df14cbdcfbe3fbdc814d,
+    type: 2}

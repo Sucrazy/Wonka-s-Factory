@@ -41,7 +41,7 @@ Transform:
   m_GameObject: {fileID: 1802979521991202}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 7.5, y: 7.5, z: 7.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -128,14 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51413d30ba34141841115040fa21fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
-  reachDist: 0.18
-  currentPoint: 0
-  pathList: {fileID: 0}
   zapperConversion: {fileID: 1666783753515016, guid: ac8eeb44ff65a254d90d05ea8e5acbbc,
     type: 2}
-  conversionConversion: {fileID: 1802979521991202}
-  tappyConversion: {fileID: 0}
+  conversionConversion: {fileID: 1897891450386560, guid: fda40c2a8930b4247ad4b2419df21dba,
+    type: 2}
+  tappyConversion: {fileID: 1838774354318444, guid: 8390d2c2d014cc1409b5c08a0d43034b,
+    type: 2}
 --- !u!114 &114341461372458374
 MonoBehaviour:
   m_ObjectHideFlags: 1

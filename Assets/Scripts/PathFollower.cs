@@ -56,6 +56,14 @@ public class PathFollower : MonoBehaviour
                         Destroy(this.gameObject);
                     }
 
+                    else if (obj.CompareTag("Taffy"))
+                    {
+                        GameObject candyChange = GameObject.Instantiate(tappyConversion, gameObject.transform.position, gameObject.transform.rotation);
+                        PathFollower cChange = candyChange.GetComponent<PathFollower>();
+                        cChange.currentPoint = currentPoint + 1;
+                        Destroy(this.gameObject);
+                    }
+
                     else
                         currentPoint++;
                 }

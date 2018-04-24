@@ -127,6 +127,7 @@ ModelImporter:
     2100006: lambert1
     2100008: lightning
     2100010: lambert4
+    2100012: zapmachine2
     2300000: bifrostAero1Mesh
     2300002: pCube5
     2300004: polySurface17
@@ -138,6 +139,7 @@ ModelImporter:
     4300000: bifrostAero1Mesh
     4300002: pCube5
     4300004: polySurface17
+    4300006: polySurface19
     9500000: //RootNode
   externalObjects: {}
   materials:
