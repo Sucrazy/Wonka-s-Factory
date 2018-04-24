@@ -158,9 +158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51413d30ba34141841115040fa21fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zapperConversion: {fileID: 1069021776740716}
-  conversionConversion: {fileID: 1069021776740716}
-  tappyConversion: {fileID: 0}
+  zapperConversion: {fileID: 1103417809592098, guid: c4888d4a6b2a70340a94121e97b03d61,
+    type: 2}
+  conversionConversion: {fileID: 1412922953701250, guid: 2ff1d1bb08cdc934ea63b08885a25cca,
+    type: 2}
+  tappyConversion: {fileID: 1045571013351242, guid: 509daa0339eea1849a6b9860e4c3b424,
+    type: 2}
 --- !u!114 &114641871545862574
 MonoBehaviour:
   m_ObjectHideFlags: 1

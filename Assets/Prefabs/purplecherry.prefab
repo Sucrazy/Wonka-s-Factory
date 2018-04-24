@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51413d30ba34141841115040fa21fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zapperConversion: {fileID: 1992732728161174, guid: 55f6bb9990cd3fe43b1674b35a1903e7,
+  zapperConversion: {fileID: 1487549718927638, guid: 39d6edeeae738034eb7b18445eb81825,
     type: 2}
   conversionConversion: {fileID: 1386273171810444, guid: ec3090bd838743e4484bf43708434b03,
     type: 2}

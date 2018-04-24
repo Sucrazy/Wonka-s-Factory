@@ -33,7 +33,9 @@ ModelImporter:
     2100002: BowlClr
     2100004: BaseClr
     2300000: polySurface5
+    2300002: //RootNode
     3300000: polySurface5
+    3300002: //RootNode
     4300000: polySurface5
   externalObjects: {}
   materials:
